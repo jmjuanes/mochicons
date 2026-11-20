@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   deploy:
-    if: ${{ github.repository == 'jmjuanes/icons' }}
+    if: ${{ github.repository == 'jmjuanes/mochicons' }}
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
