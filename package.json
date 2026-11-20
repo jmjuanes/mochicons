@@ -10,7 +10,7 @@
         "url": "https://github.com/jmjuanes/mochicons"
     },
     "bugs": "https://github.com/jmjuanes/mochicons/issues",
-    "homepage": "https://icons.josemi.xyz",
+    "homepage": "https://josemi.xyz/mochicons",
     "exports": {
         ".": {
             "types": "./index.d.ts",
