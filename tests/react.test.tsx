@@ -2,7 +2,7 @@ import { render, screen, act, fireEvent } from "@testing-library/react";
 import { Icon, renderIcon } from "../icons.tsx";
 import "@testing-library/jest-dom";
 
-describe("josemi-icons/react", () => {
+describe("mochicons/react", () => {
     describe("Icon", () => {
         it("should wrap icons in a <svg> component", () => {
             render(<Icon path="" />);
