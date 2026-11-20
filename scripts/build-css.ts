@@ -11,19 +11,19 @@ const build = () => {
         `*:before {`,
         ...icons.map((icon: Icon) => {
             const data = encodeSvg(generateSvg(icon.path));
-            return `--josemi-icons-${icon.name}: url("data:image/svg+xml;utf8,${data}") no-repeat;`;
+            return `--mochicons-${icon.name}: url("data:image/svg+xml;utf8,${data}") no-repeat;`;
         }),
         `}`,
-        `[class^="ji-"],`,
-        `[class*=" ji-"] {`,
+        `[class^="mi"],`,
+        `[class*=" mi"] {`,
         `    align-self: center;`,
         `    display: inline-flex;`,
         `    line-height: 1;`,
         `    text-rendering: auto;`,
         `    vertical-align: -0.125em;`,
         `}`,
-        `[class^="ji-"]:before,`,
-        `[class*=" ji-"]:before {`,
+        `[class^="mi"]:before,`,
+        `[class*=" mi"]:before {`,
         `    content: "''";`,
         `    background-color: currentColor;`,
         `    display: inline-block;`,
@@ -32,10 +32,10 @@ const build = () => {
         `}`,
         ...icons.map((icon: Icon) => {
             const iconStyles = [
-                `.ji-${icon.name}:before {`,
-                `    mask: var(--josemi-icons-${icon.name}) no-repeat;`,
+                `.mi${icon.name}:before {`,
+                `    mask: var(--mochicons-${icon.name}) no-repeat;`,
                 `    mask-size: 100% 100%;`,
-                `    -webkit-mask: var(--josemi-icons-${icon.name}) no-repeat;`,
+                `    -webkit-mask: var(--mochicons-${icon.name}) no-repeat;`,
                 `    -webkit-mask-size: 100% 100%;`,
                 `}`,
             ];
